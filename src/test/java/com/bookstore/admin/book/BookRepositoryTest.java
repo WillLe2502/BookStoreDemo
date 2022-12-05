@@ -57,6 +57,7 @@ public class BookRepositoryTest {
 	public void testDeleteBook() {
 		Integer bookId = 3;
 		System.out.println();
+		System.out.println();
 		repo.deleteById(bookId);
 
 	}
