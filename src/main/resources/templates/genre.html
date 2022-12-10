@@ -72,7 +72,7 @@
 	</div>
 	
 	<div class="container">
-		<h2>Manage Books</h2>	
+		<h2>Manage Genre</h2>	
 	</div>
 	
 	<div class="container">
@@ -84,9 +84,9 @@
 				</tr>								
 			</thead>
 			<tbody>
-				<tr th:each="author : ${listAuthors}">
-					<td>[[${author.id}]]</td>
-					<td>[[${author.name}]]</td>
+				<tr th:each="genre : ${listGenres}">
+					<td>[[${genre.id}]]</td>
+					<td>[[${genre.name}]]</td>
 				</tr>
 			</tbody>
 		</table>
