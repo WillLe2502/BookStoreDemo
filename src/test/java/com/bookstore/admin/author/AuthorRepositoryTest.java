@@ -25,7 +25,7 @@ public class AuthorRepositoryTest {
 	
 	@Test
 	public void testCreateNewAuthor() {
-		Author book1 = new Author("Richard Fidler");
+		Author book1 = new Author("Alice Oseman");
 
 		Author savedBook = repo.save(book1);
 
@@ -40,14 +40,14 @@ public class AuthorRepositoryTest {
 
 	@Test
 	public void testGetAuthorById() {
-		Author author = repo.findById(1).get();
+		Author author = repo.findById(3).get();
 		System.out.println(author);
 		assertThat(author).isNotNull();
 	}
 	
 	@Test
 	public void testUpdateAuthorDetails() {
-		Author author = repo.findById(1).get();
+		Author author = repo.findById(5).get();
 		author.setName("Heartstopper");
 
 		repo.save(author);
@@ -55,7 +55,7 @@ public class AuthorRepositoryTest {
 	
 	@Test
 	public void testDeleteAuthor() {
-		Integer authorId = 3;
+		Integer authorId = 5;
 		repo.deleteById(authorId);
 
 	}

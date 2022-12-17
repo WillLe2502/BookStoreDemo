@@ -16,4 +16,8 @@ public class BookService {
 	public List<Book> listAll() {
 		return (List<Book>) repo.findAll();
 	}
+	
+	public List<Book> listById(int id){
+		return (List<Book>) repo.findAll();
+	}
 }
