@@ -8,8 +8,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "genre")
-public class Genre {
+@Table(name = "publisher")
+public class Publisher {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
@@ -17,11 +17,11 @@ public class Genre {
 	@Column(length = 45, nullable = false, unique = true)
 	private String name;
 
-	public Genre() {
+	public Publisher() {
 
 	}
 
-	public Genre(String name) {
+	public Publisher(String name) {
 		this.name = name;
 	}
 
